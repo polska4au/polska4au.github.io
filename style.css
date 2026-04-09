@@ -30,6 +30,12 @@ html, body {
 }
 
 .logo {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo2 {
     color: #d22;
     font-weight: bold;
     letter-spacing: 2px;
@@ -68,12 +74,5 @@ html, body {
 .discord-box iframe {
     display: block;
     border-radius: 8px;
-}
-
-.widgetHeader-BhPbjx {
-
-    color: #d22;
-    background-color: #d22;
-
 }
 
