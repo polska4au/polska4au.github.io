@@ -79,4 +79,5 @@ body, html {
 
 .discord-widget iframe {
     border-radius: 8px;
+    display: flex;
 }
