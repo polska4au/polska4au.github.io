@@ -81,4 +81,6 @@ html, body {
 
 hr {
     color: whitesmoke;
+    height: 3px;
+    padding 5px;
 }
