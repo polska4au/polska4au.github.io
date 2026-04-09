@@ -58,7 +58,58 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px; /* space between left and right boxes */
+    padding: 40px;
 }
+
+/* left side container */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* text box */
+.counter-box {
+    width: 320px;
+    padding: 25px;
+    background: rgba(40, 40, 40, 0.85);
+    border: 2px solid rgba(60, 20, 20, 0.7);
+    border-radius: 14px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.counter-box h2 {
+    margin-bottom: 15px;
+    color: #d4b84a;
+}
+
+.counter-box p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* space for chibi */
+.chibi-space {
+    width: 320px;
+    height: 220px;
+    background: rgba(40, 40, 40, 0.65);
+    border: 2px solid rgba(60, 20, 20, 0.7);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* optional image */
+.chibi-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 
 /* auto-size to widget */
 .discord-box {
