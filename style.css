@@ -70,46 +70,10 @@ html, body {
     border-radius: 8px;
 }
 
-/* Discord.js css */
-.discord-widget .widget-header {
-	background-color: #Af1421;
+.widgetHeader-BhPbjx {
+
+    color: #d22;
+    background-color: #d22;
+
 }
-.discord-widget .widget-footer {
-	background-color: #Af1421;
-	color: #fff;
-}
-.discord-widget .widget-body {
-    background-color: #Af1421;
-	color: #fff;
-}
-.discord-widget .widget-footer-info {
-	color: #fff;
-}
-.discord-widget .widget-member-avatar img {
-    border: 3px ridge #Af1421;
-    background-color: #Af1421;
-}
-.discord-widget .widget-member .widget-member-name {
-    background-color: #Af1421;
-}   
-.discord-widget .widget-role-name {
-    color: #fff;
-    background: #Af1421;
-    padding: 5px;
-    border-radius: 5px;
-}
-.discord-widget .widget-btn-connect {
-	color: #088488;
-    background-color: #d9d4cc;
-    border: 0;
-}
-.discord-widget .widget-btn-connect:hover {
-    color: #3a3a3a;
-    background-color: #d9d4cc;
-    border: 0;
-    opacity: 1;
-}
-.discord-widget .widget-body {
-	background: url("https://static.wikia.nocookie.net/dandadan/images/6/68/Discord_Widget.png/revision/latest?cb=20221006012720") top / cover;
-	box-shadow: none;
-}
+
