@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* Background image */
+.bg-image {
+    position: fixed;
+    inset: 0;
+    background: url('background.jpg') center center / cover no-repeat;
+    z-index: -2;
+}
+
+/* optional white overlay for soft effect */
+.hero-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: rgba(200, 200, 200, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    color: #d32f2f; /* red tone from screenshot */
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #c8b86c; /* yellowish text from screenshot */
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+/* Content box */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between; /* pushes Discord to right */
+    align-items: center;
+    background: rgba(50, 50, 50, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    min-width: 900px;
+    max-width: 1200px;
+}
+
+.text-content h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.discord-widget iframe {
+    border-radius: 8px;
+}
