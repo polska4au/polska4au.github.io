@@ -110,7 +110,6 @@ html, body {
     object-fit: contain;
 }
 
-
 /* auto-size to widget */
 .discord-box {
     display: inline-block;
@@ -127,3 +126,9 @@ html, body {
     border-radius: 8px;
 }
 
+img {
+
+    width: 25%;
+    height: 25%;
+
+}
