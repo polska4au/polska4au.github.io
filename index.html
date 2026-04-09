@@ -19,29 +19,10 @@
         </div>
     </nav>
 
-    <main class="menu-wrapper">
-        <button id="discordToggle" class="menu-button">
-            Open Discord Invite
-        </button>
-
-        <div id="discordMenu" class="discord-menu hidden">
-            <iframe
-                src="https://discordapp.com/widget?id=1405910565523689473&theme=dark"
-                width="350"
-                height="250"
-                allowtransparency="true"
-                frameborder="0">
-            </iframe>
+    <main class="center-wrapper">
+        <div class="discord-box">
+            <iframe src="https://discordapp.com/widget?id=1405910565523689473&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
         </div>
     </main>
-
-    <script>
-        const button = document.getElementById("discordToggle");
-        const menu = document.getElementById("discordMenu");
-
-        button.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
 </body>
 </html>
