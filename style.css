@@ -68,6 +68,9 @@ html, body {
     border: 2px solid rgba(60, 20, 20, 0.7);
     border-radius: 14px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: whitesmoke;
+    font-family: fantasy;
 }
 
 /* cleaner widget corners */
