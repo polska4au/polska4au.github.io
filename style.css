@@ -14,7 +14,7 @@ html, body {
 .bg-image {
     position: fixed;
     inset: 0;
-    background: url("polska4au.jpg") center center / cover no-repeat;
+    background: url("images/polska4au.jpg") center center / cover no-repeat;
     z-index: -1;
 }
 
