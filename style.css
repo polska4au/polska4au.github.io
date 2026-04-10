@@ -85,3 +85,18 @@ hr {
     background: rgba(255, 255, 255, 0.6);
     margin: 12px 0;
 }
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-title {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
