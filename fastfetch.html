@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polska4AU</title>
+    <title>Polska4AU - Fastfetch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,108 +25,51 @@
                 <a href="index.html">Discord</a>
             </div>
         </div>
-    </nav>  
+    </nav>
 
     <main class="center-wrapper">
-        <div class="discord-box">
-            <code>
-                
-{
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-    	"source": "/usr/share/icons/image.png",
-    	"type": "kitty-direct",
-    	"height": 18,
-    },
-    "display": {
-        "separator": " "
-    },
-    "modules": [
-	"break",
-        "break",
-        "break",
-	{
-            "type": "custom",
-            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
-        },
-	"break",
-	{
-            "type": "title",
-            "keyWidth": 10
-        },
-        "break",
-        {
-            "type": "os",
-            "format": "Fedora Linux 43 x86_64",
-	    "key": " ",
-            "keyColor": "34",  // = color4
-        },
-        {
-            
-	    "type": "kernel",
-	    "format": "Linux 7.0.0",
-            "key": " ",
-            "keyColor": "34",
-        },
-        {
-            "type": "packages",
-            "format": "{} (dnf)",
-            "key": " ",
-            "keyColor": "34",  
-        },
-        {
-            "type": "shell",
-            "key": " ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "terminal",
-            "key": " ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "wm",
-            "key": " ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "cursor",
-            "key": " ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "terminalfont",
-            "key": " ",
-            "keyColor": "34", 
-        },
-	{
-	    "type": "disk",
-	    "key": " ",
-	    //"format": "{} USB",
-	    "keyColor": "34",
-	},
-       // {
-       //     "type": "command",
-       //     "key": " ",
-       //     "keyColor": "34",
-       //     "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
-       //` },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
-        },
-        "break",
-        "break",
-    ]
-}
+        <div class="fastfetch-box">
+            <button id="viewSwitch" class="switch-btn">
+                Switch View
+            </button>
 
-            </code>
-            <hr>
-            <h2>Margaret Counter</h2>
-            <p>Obecny Grzesznik - Marcin</p>
-            <p>Zostało 100</p>
+            <div id="previewView" class="view-panel">
+                <pre>
+kris@polska4au
+---------------
+OS: Arch Linux
+WM: Niri
+Shell: fish
+Terminal: kitty
+CPU: Intel Core i5
+GPU: Intel UHD
+Memory: 8 GiB
+                </pre>
+            </div>
+
+            <div id="codeView" class="view-panel hidden">
+<pre><code>{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch",
+  "logo": {
+    "source": "arch"
+  },
+  "display": {
+    "separator": " -> "
+  }
+}</code></pre>
+            </div>
         </div>
     </main>
+
+    <script>
+        const switchBtn = document.getElementById("viewSwitch");
+        const preview = document.getElementById("previewView");
+        const code = document.getElementById("codeView");
+
+        switchBtn.addEventListener("click", () => {
+            preview.classList.toggle("hidden");
+            code.classList.toggle("hidden");
+        });
+    </script>
 </body>
 </html>
